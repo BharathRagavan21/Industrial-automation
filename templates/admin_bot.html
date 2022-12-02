@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<title>Bots</title> 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> 
+</head> 
+<body> 
+<div class="container"> 
+<a href="/addbot" class="float-right" style="text-decoration:none; color:white">
+<button class="btn btn-primary">Add Bot</button></a> 
+<table class="table"> 
+<thead> 
+<tr> 
+<th scope="col">Id</th> 
+<th scope="col">Type</th> 
+</tr> 
+</thead> 
+<tbody> 
+{% for bot in bots %} 
+<tr> 
+<th scope="col">{{ bot.id }}</th> 
+<td>{{ bot.type }}</td> 
+</tr> 
+{% endfor %} 
+</tbody> 
+</table> 
+</div> 
+</body> 
+</html>

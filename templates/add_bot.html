@@ -1,0 +1,20 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8">
+<title>Add a Bot</title> 
+</head> 
+<body> 
+<div> 
+<form action="" method="POST"> 
+{{ form.hidden_tag() }} 
+<fieldset> 
+<legend>Add a new Bot</legend> 
+<div>{{ form.id.label }}{{ form.id }}</div> 
+<div>{{ form.type.label }}{{ form.type }}</div> 
+</fieldset> 
+<div>{{ form.submit }}</div> 
+</form> 
+</div> 
+</body> 
+</html>
